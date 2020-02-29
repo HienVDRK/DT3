@@ -1,0 +1,14 @@
+.info_films{
+    line-height: 30px;
+    height: 30px;
+    font-size: 18px
+}
+.imgPoster{
+    height: 465px !important;
+    display: block;
+    width: 360px
+}
+.videoTrailer{
+    height: 465px
+}
+

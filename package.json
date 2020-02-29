@@ -1,0 +1,32 @@
+{
+  "name": "de-tai-3",
+  "version": "0.1.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "test": "standard",
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "next start -p $PORT"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "babel-eslint": "^10.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "heroku": "^7.38.2",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.2.1",
+    "nodemon": "^2.0.2",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-youtube": "^7.9.0",
+    "standard": "^14.3.1",
+    "universal-cookie": "^4.0.3",
+    "youtube-api-search": "^0.0.5"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
