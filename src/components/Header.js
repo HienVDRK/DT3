@@ -13,7 +13,7 @@ function Head () {
   if (typeof window !== 'undefined') {
     if (window.localStorage.getItem('accCurrentLogged')) {
       btnLogin = (
-        <a href='#' onClick={handleOnLogout}><span className='glyphicon glyphicon-log-out' /> Logout</a>
+        <a href='#' onClick={handleOnLogout}><span className='glyphicon glyphicon-log-out' /> {JSON.parse(window.localStorage.getItem('accCurrentLogged'))[0].username}</a>
       )
     } else {
       btnLogin = (

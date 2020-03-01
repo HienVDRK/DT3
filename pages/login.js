@@ -13,7 +13,7 @@ class Login extends Component {
     const userName = this.state.txtUsername
     const passWord = this.state.txtPassword
     const getAccount = JSON.parse(window.localStorage.getItem('account'))
-    if (getAccount.some(account => account.username === userName && account.password === passWord)) {
+    if (getAccount && getAccount.some(account => account.username === userName && account.password === passWord)) {
       this.state.accCurrentLogged.push({
         username: this.state.txtUsername,
         password: this.state.txtPassword
@@ -21,7 +21,7 @@ class Login extends Component {
       window.localStorage.setItem('accCurrentLogged', JSON.stringify(this.state.accCurrentLogged))
       window.alert('Đăng nhập thành công')
     } else {
-      window.alert('Sai tên tài khoản hoặc mật khẩu')
+      window.alert('Lỗi: Sai tên tài khoản hoặc mật khẩu')
     }
   }
 
